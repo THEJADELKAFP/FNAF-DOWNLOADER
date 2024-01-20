@@ -4,6 +4,30 @@
 About
 {% endblock %}
 
+
 {% block content %}
-   <h1>que es esto?</h1>
+
+<div class="card-group" style="margin-top: 10px;">
+   <div class="card" >
+     <img src="{{ url_for('static', filename='img/JADELKA.jpeg') }}" class="card-img-top" alt="JADELKA">
+     <div class="card-body">
+       <h5 class="card-title">JADELKA</h5>
+       <p class="card-text">Desarrollador web especializado en el uso de Flask, Python, HTML y Bootstrap, formando parte integral del equipo en JFK Technology. He participado en diversos proyectos, destacando la creación de una plataforma de votación y el desarrollo de sistemas para la descarga de juegos.</p>
+     </div>
+   </div>
+   <div class="card">
+     <img src="{{ url_for('static', filename='img/JADELKA.jpeg') }}" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+     </div>
+   </div>
+   <div class="card">
+     <img src="{{ url_for('static', filename='img/JADELKA.jpeg') }}" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+     </div>
+   </div>
+ </div>
 {% endblock %}
