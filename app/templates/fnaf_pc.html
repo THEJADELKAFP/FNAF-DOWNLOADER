@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block title %}
+FNAF PC
+{% endblock %}
+
+{% block content %}
+
+<div class="toast position-absolute top-0 end-0" role="alert" aria-live="assertive" aria-atomic="true" >
+    <div class="toast-header">
+      <img src="{{ url_for('static', filename='img/JADELKA.jpeg') }}" class="rounded me-2" alt="" style="width: 30px;">
+      <strong class="me-auto">CONSEJO</strong>
+      <small></small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Puedes hacer clic en las imágenes para descargar el juego.
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Selecciona el elemento de la tostada
+      var toastElement = document.querySelector('.toast');
+    
+      // Muestra la tostada
+      var toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    
+      // Oculta la tostada después de 5000 milisegundos (5 segundos)
+      setTimeout(function () {
+        toast.hide();
+      }, 50000);
+    });
+    </script>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">JUEGO PC</th>
+        <th scope="col">DESCRAGAS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>{{ juego_name_1 }}</td>
+        <td>{{ juego_downloader_1 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>{{ juego_name_2 }}</td>
+        <td>{{ juego_downloader_2 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>{{ juego_name_3 }}</td>
+        <td>{{ juego_downloader_3 }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+<!--FNAF 1-->
+<div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_1.jpeg') }}" class="w-100" alt="FNAF_1">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's (FNAF 1)</h5>
+      <p>En el primer juego, los jugadores asumen el papel de un guardia de seguridad nocturno en Freddy Fazbear's Pizza, un restaurante que cuenta con animatronics animados durante el día para el entretenimiento de los niños. Sin embargo, durante la noche, estos animatronics, como Freddy Fazbear, Bonnie, Chica y Foxy, se vuelven impredecibles y potencialmente peligrosos. El jugador debe monitorear las cámaras de seguridad para asegurarse de que los animatronics no se acerquen a la oficina del guardia. La falta de energía y la limitada capacidad para cerrar puertas aumentan la tensión, ya que el objetivo es sobrevivir durante cinco noches.</p>
+      <a href="https://www.mediafire.com/file/rmodvm58m8kzj21/FiveNightsatFreddys.exe/file" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 2-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_2.webp') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's 2 (FNAF 2)</h5>
+      <p>La secuela amplía la historia y presenta un nuevo restaurante con animatronics renovados. La mecánica central involucra el uso de una máscara y linternas para disuadir a los animatronics de atacar. La narrativa se profundiza al explorar los orígenes de los animatronics y la historia del restaurante. El juego también introduce el personaje de Marionette y ofrece una experiencia más frenética y desafiante.</p>
+      <a href="https://www.mediafire.com/file/v8a5hz248mosuc9/Five_Nights_At_Freddys_2.rar/file" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 3-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_3.webp') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's 3 (FNAF 3)</h5>
+      <p>Ubicado en Fazbear's Fright, una atracción basada en la leyenda de los animatronics, el tercer juego presenta la amenaza de Springtrap, un animatronic particularmente peligroso. La mecánica se centra en utilizar sistemas de audio y cámaras para rastrear y evitar a Springtrap. La trama explora más a fondo la historia detrás de los eventos anteriores y las misteriosas desapariciones.</p>
+      <a href="https://www.mediafire.com/file/5tvyzr4tz1lwf9p/FiveNightsatFreddys3.exe/file" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 4-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_4.webp') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's 4 (FNAF 4)</h5>
+      <p>Diferente de los juegos anteriores, FNAF 4 coloca al jugador en la habitación de un niño que está siendo atormentado por animatronics en su mente. La mecánica se basa en escuchar y reaccionar a los sonidos para prevenir los ataques. La historia se relaciona con la familia Afton y agrega capas a la narrativa general de la serie.</p>
+      <a href="https://www.mediafire.com/file/dpu5m43suvzehq0/FNAF4_OVF2.rar/file" class="stretched-link">DESCRAGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 5-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_5.webp') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's: Sister Location (FNAF 5)</h5>
+      <p>Este juego introduce una nueva ubicación y cambia la mecánica al tener diferentes segmentos en lugar de noches consecutivas. La historia sigue a Michael Afton mientras trabaja en una nueva instalación y explora su conexión con la familia Afton y los eventos anteriores.</p>
+      <a href="https://www.mediafire.com/file/jpqh04g78bpgvz4/SisterLocation.exe/file" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 6-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_6.jpg') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Freddy Fazbear's Pizzeria Simulator (FNAF 6)</h5>
+      <p>En este juego, los jugadores gestionan su propio restaurante Freddy Fazbear's Pizzeria, pero se enfrentan a desafíos inesperados. La historia se desarrolla a medida que se revelan detalles cruciales sobre la trama general, y el juego combina elementos de simulación de negocios con las mecánicas de supervivencia tradicionales.</p>
+      <a href="#" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+
+  <!--FNAF 7-->
+  <div class="row g-0 bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="{{ url_for('static', filename='img/fnaf_7.webp  ') }}" class="w-100" alt="...">
+    </div>
+    <div class="col-md-6 p-4 ps-md-0">
+      <h5 class="mt-0">Five Nights at Freddy's: UCN (FNAF 7)</h5>
+      <p> "Ultimate Custom Night," los jugadores tienen la capacidad de personalizar su experiencia de juego seleccionando qué animatrónicos estarán activos durante la noche y ajustando la dificultad de cada uno. El objetivo es sobrevivir a la noche manteniendo a raya a los animatrónicos y evitando que entren en la oficina.
+
+        Si tienes alguna pregunta específica sobre "Freddy Fazbear's Ultimate Custom</p>
+      <a href="https://www.mediafire.com/file/mj1xya11ho9jga9/Ultimate_CN_v1.032.rar/file" class="stretched-link">DESCARGA</a>
+    </div>
+  </div>
+{% endblock %}
+

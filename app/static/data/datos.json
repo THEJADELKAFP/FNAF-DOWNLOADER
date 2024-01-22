@@ -1,0 +1,9 @@
+[
+    {"juego": "Five Nights at Freddy's (FNAF 1)", "version": "1", "descarga": "descarga", "valor": 16},
+    {"juego": "Five Nights at Freddy's 2 (FNAF 2)", "version": "2", "descarga": "descarga", "valor": 3},
+    {"juego": "Five Nights at Freddy's 3 (FNAF 3)", "version": "3", "descarga": "descarga", "valor": 11},
+    {"juego": "Five Nights at Freddy's 4 (FNAF 4)", "version": "4", "descarga": "descarga", "valor": 5},
+    {"juego": "Five Nights at Freddy's: Sister Location (FNAF 5)", "version": "5", "descarga": "descarga", "valor": 6},
+    {"juego": "Freddy Fazbear's Pizzeria Simulator (FNAF 6)", "version": "6", "descarga": "descarga", "valor": 1},
+    {"juego": "Freddy Fazbear's Ultimate Custom Night", "version": "7", "descarga": "descarga", "valor": 8}
+]
