@@ -5,6 +5,30 @@ FNAF ANDROID
 {% endblock %}
 
 {% block content %}
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">! IMPORTANTE !</h4>
+  <p> Queremos informarte que la sección de juegos de Android aún no ha sido completamente desarrollada y, como resultado, podrían surgir posibles inconvenientes. <br> Esto puede incluir la imposibilidad de descargar los juegos o errores durante el proceso de instalación.</p>
+  <hr>
+  <p class="mb-0">Como equipo responsable de la web, pedimos disculpas por cualquier inconveniente. Estamos trabajando para solucionar este error. ¡Gracias por tu paciencia!</p>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona el elemento de la tostada
+    var toastElement = document.querySelector('.toast');
+  
+    // Muestra la tostada
+    var toast = new bootstrap.Toast(toastElement);
+    toast.show();
+  
+    // Oculta la tostada después de 5000 milisegundos (5 segundos)
+    setTimeout(function () {
+      toast.hide();
+    }, 64000);
+  });
+  </script>
+
 <!--FNAF 1-->
 <div class="row g-0 bg-light position-relative">
     <div class="col-md-6 mb-md-0 p-md-4">
