@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+NEW GAME
+{% endblock %}
+
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token }}
+    <label>{{ form.name.label }}</label>
+    {{ form.name }}
+    <br>
+    <label>{{ form.description.label }}</label>
+    {{ form.description }}
+    <br>
+    <label>{{ form.image.label }}</label>
+    {{ form.image }}
+    <br>
+    <label>{{ form.link.label }}</label>
+    {{ form.link }}
+    <br>
+    {{ form.submit }}
+</form>
+{% endblock %}

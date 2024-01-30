@@ -5,6 +5,28 @@ Home
 {% endblock %}
 
 {% block content %}
+   <!-- Lista de elementos con botones de eliminar (visible solo para el admin) -->
+
+<!-- Lista de elementos con botones de eliminar (visible solo para el admin) -->
+{% if items %}
+    {% for item in items %}
+        <div>
+            <img src="{{ url_for('static', filename='img/' + item.image) }}" alt="{{ item.name }}">
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.description }}</p>
+            <a href="{{ item.link }}" target="_blank">Enlace</a>
+
+            {% if current_user.is_authenticated and current_user.id == 'admin' %}
+                <form method="POST" action="{{ url_for('eliminar', item_index=loop.index0) }}">
+                    {{ form.hidden_tag() }}
+                    <button type="submit">Eliminar</button>
+                </form>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No hay elementos disponibles.</p>
+{% endif %}
 
 
 
